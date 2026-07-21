@@ -88,6 +88,10 @@
   font-size: 0.88rem;
 }
 
+.single-project {
+  grid-template-columns: minmax(0, 380px);
+}
+
 @media (max-width: 940px) {
   .onsight-metrics {
     grid-template-columns: 1fr 1fr;
@@ -100,6 +104,10 @@
   }
 
   .onsight-details {
+    grid-template-columns: 1fr;
+  }
+
+  .single-project {
     grid-template-columns: 1fr;
   }
 
