@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zhengyu Zhuang — electrical and computer engineering graduate student researching OnSight, on-device vision-language assistance for blind mobility.">
+  <meta name="description" content="Zhengyu Zhuang — developing OnSight, a local-and-cloud iOS assistant for blind navigation, surroundings exploration, and object finding.">
   <meta name="theme-color" content="#f3f1ea">
   <title>Zhengyu Zhuang · Robotics & Embedded Intelligence</title>
   <link rel="stylesheet" href="styles.css">
@@ -39,7 +39,7 @@
           <p class="eyebrow">Electrical & Computer Engineering · Boston, MA</p>
           <h1 id="hero-title">Zhengyu<br>Zhuang</h1>
           <p class="hero-tagline">I build intelligent systems that sense, decide, and move.</p>
-          <p class="hero-summary">Graduate student at Boston University developing OnSight, an iPhone-based assistive mobility research prototype that combines on-device vision-language inference, route context, and spoken guidance.</p>
+          <p class="hero-summary">Graduate student at Boston University developing OnSight toward a publicly available iOS assistant for blind navigation, surroundings exploration, and object finding—with both private on-device inference and optional cloud intelligence.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="mailto:zhuanz@bu.edu">Email me <span aria-hidden="true">↗</span></a>
             <a class="button" href="assets/Zhengyu_Zhuang_CV.pdf" target="_blank" rel="noopener">View CV <span aria-hidden="true">↗</span></a>
@@ -93,16 +93,16 @@
         <div class="section-heading reveal">
           <p class="eyebrow">Selected projects</p>
           <h2 id="projects-title">Research with a path forward.</h2>
-          <p class="section-intro">My work spans research, autonomous systems, and embedded engineering. OnSight is my primary research direction: an on-device vision-language system for contextual and privacy-conscious blind mobility.</p>
+          <p class="section-intro">My work spans research, autonomous systems, and embedded engineering. OnSight is my primary research direction: turning an evaluated prototype into a dependable, publicly downloadable assistive mobility app.</p>
         </div>
 
         <article class="featured-project reveal" aria-labelledby="onsight-title">
           <div class="featured-project-copy">
-            <div class="featured-meta"><span>Featured research · iOS</span><span>Research prototype</span></div>
+            <div class="featured-meta"><span>Featured research · iOS</span><span>Active development</span></div>
             <p class="featured-number">01 / ONSIGHT</p>
             <h3 id="onsight-title">OnSight</h3>
             <p class="featured-lead">On-device vision-language support for contextual and privacy-preserving navigation in blind mobility.</p>
-            <p>OnSight combines first-person camera input, coarse GPS and route context, an on-device FastVLM, temporal filtering, and concise spoken feedback. It augments established mobility tools with timely cues about landmarks, openings, surface changes, entrances, and scene structure.</p>
+            <p>OnSight combines first-person camera input, GPS and route context, vision-language inference, temporal filtering, and concise spoken feedback. The goal is a mature app that helps blind and low-vision users navigate to destinations, explore nearby environments, and find specific objects without replacing established mobility tools or user judgment.</p>
             <div class="onsight-metrics" aria-label="Paper-reported evaluation results">
               <div><strong>13</strong><span>blind participants</span></div>
               <div><strong>~1 km</strong><span>outdoor route</span></div>
@@ -111,7 +111,7 @@
             </div>
             <p class="evidence-note">Evaluation figures are reported by the manuscript for its studied build.</p>
             <div class="featured-actions" aria-label="OnSight technologies and status">
-              <span>FastVLM</span><span>MLX Swift</span><span>MapKit</span><span>CoreLocation</span><span>SwiftUI</span><span>Repository planned</span>
+              <span>Local + Cloud</span><span>FastVLM</span><span>MLX Swift</span><span>MapKit</span><span>Model Quantization</span><span>Repository planned</span>
             </div>
           </div>
           <div class="onsight-graphic" aria-hidden="true">
@@ -125,14 +125,14 @@
         </article>
 
         <div class="onsight-pipeline reveal" aria-label="OnSight processing pipeline">
-          <span>First-person camera</span><i>→</i><span>On-device FastVLM</span><i>→</i><span>Route context</span><i>→</i><span>Temporal filter</span><i>→</i><span>Spoken cue</span>
+          <span>First-person camera</span><i>→</i><span>Local or cloud model</span><i>→</i><span>Route / target context</span><i>→</i><span>Guidance policy</span><i>→</i><span>Spoken cue</span>
         </div>
 
         <div class="onsight-details">
           <article class="onsight-detail reveal">
             <span>01 · System</span>
-            <h3>A complete sensing-to-speech loop</h3>
-            <p>Rear-camera frames and CoreLocation data feed local inference and route reasoning. Lookahead, deviation smoothing, action voting, duplicate suppression, and speech scheduling keep guidance selective and timely.</p>
+            <h3>A local-first, cloud-capable system</h3>
+            <p>Rear-camera frames and CoreLocation data feed route reasoning and vision-language inference. Local mode prioritizes privacy and predictable latency; an explicit cloud mode can support richer models when users choose connectivity and data sharing.</p>
           </article>
           <article class="onsight-detail reveal">
             <span>02 · Evidence</span>
@@ -141,8 +141,13 @@
           </article>
           <article class="onsight-detail reveal">
             <span>03 · Next</span>
-            <h3>Navigate and Explore, designed separately</h3>
-            <p>The next cycle separates terse, event-driven route guidance from deliberate target-focused exploration, while improving route state, uncertainty, accessibility, privacy controls, replay testing, and model specialization.</p>
+            <h3>From prototype to downloadable product</h3>
+            <p>The roadmap separates three user goals—Navigate, Explore Surroundings, and Find an Object—while improving accessibility, uncertainty handling, privacy controls, testing, and long-session reliability.</p>
+            <div class="roadmap-list" aria-label="OnSight development goals">
+              <span>Train and specialize a compact mobility model</span>
+              <span>Quantize for stable execution on iPhone 17 Pro-class iOS devices</span>
+              <span>Prepare an accessible, publicly downloadable release</span>
+            </div>
           </article>
         </div>
 

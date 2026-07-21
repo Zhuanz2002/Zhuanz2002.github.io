@@ -88,6 +88,28 @@
   font-size: 0.88rem;
 }
 
+.roadmap-list {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.roadmap-list span {
+  position: relative;
+  padding-left: 1rem;
+  color: #52605d;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.roadmap-list span::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--coral);
+  font-weight: 900;
+}
+
 .single-project {
   grid-template-columns: minmax(0, 380px);
 }
