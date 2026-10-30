@@ -3,67 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for OnSight Beacon.">
+  <meta name="description" content="Privacy Policy for SceneReader.">
   <meta name="theme-color" content="#f4f1e8">
-  <title>OnSight Beacon Privacy Policy</title>
+  <title>SceneReader Privacy Policy</title>
   <style>
     :root { color-scheme: light; --ink:#18211f; --muted:#56635f; --paper:#f4f1e8; --card:#fffdf7; --accent:#26766c; }
     * { box-sizing:border-box; }
-    body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    main { width:min(820px,calc(100% - 32px)); margin:0 auto; padding:64px 0 80px; }
-    article { padding:clamp(24px,5vw,56px); background:var(--card); border:1px solid #dcd7ca; border-radius:20px; box-shadow:0 18px 50px rgba(24,33,31,.08); }
-    h1 { margin:0 0 8px; font-size:clamp(2rem,6vw,3.8rem); line-height:1.05; letter-spacing:-.04em; }
-    h2 { margin:2.2rem 0 .6rem; font-size:1.25rem; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(820px,calc(100% - 32px)); margin:0 auto; padding:48px 0 64px; }
+    article { padding:clamp(24px,5vw,52px); background:var(--card); border:1px solid #dcd7ca; border-radius:20px; box-shadow:0 18px 50px rgba(24,33,31,.08); }
+    h1 { margin:0 0 12px; font-size:clamp(2rem,6vw,3.5rem); line-height:1.1; letter-spacing:-.04em; }
+    h2 { margin:2rem 0 .5rem; font-size:1.25rem; line-height:1.35; }
     p,li { color:var(--muted); }
-    a { color:var(--accent); font-weight:650; }
-    .eyebrow { margin:0 0 18px; color:var(--accent); font-size:.78rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
-    .updated { margin-top:0; font-size:.9rem; }
+    a { color:var(--accent); font-weight:650; overflow-wrap:anywhere; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    li + li { margin-top:.6rem; }
+    .eyebrow { margin:0 0 14px; color:var(--accent); font-size:.85rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    .updated { margin-top:0; font-size:.95rem; }
     .notice { padding:16px 18px; border-left:4px solid var(--accent); background:#e9f2ee; border-radius:8px; }
-    footer { margin-top:28px; text-align:center; color:var(--muted); font-size:.9rem; }
+    footer { margin-top:24px; text-align:center; color:var(--muted); font-size:.9rem; }
+    @media print { body { background:white; } main { width:100%; padding:0; } article { border:0; box-shadow:none; padding:0; } }
   </style>
 </head>
 <body>
   <main>
-    <article>
-      <p class="eyebrow">OnSight Beacon</p>
-      <h1>Privacy Policy</h1>
-      <p class="updated">Effective October 7, 2026</p>
+    <article aria-labelledby="policy-title">
+      <p class="eyebrow">SceneReader</p>
+      <h1 id="policy-title">Privacy Policy</h1>
+      <p class="updated">Effective October 30, 2026</p>
+      <p>This policy describes the first SceneReader iPhone beta, which provides visual assistance, destination search and walking-route guidance.</p>
+      <p class="notice">Visual inference runs on your iPhone. This does not make every feature offline: Google map services and Apple speech recognition may process information off the device. No SceneReader account is required. We do not show advertising, sell personal information, or use your data to track you across other companies’ apps or websites for advertising.</p>
 
-      <p class="notice">OnSight Beacon is local-first. It does not require an account, sell personal information, show advertising, or track users across apps and websites.</p>
+      <h2>Camera and spoken questions</h2>
+      <p><strong>Camera:</strong> SceneReader processes camera frames on the device for visual descriptions and assistance. In this beta, the app does not automatically save camera photos or videos to its document storage, and it does not upload camera frames for cloud visual inference.</p>
+      <p><strong>Ask:</strong> When you activate Ask, microphone audio is provided to Apple’s speech-recognition framework to turn your question into text. Recognition may use Apple’s servers; this feature is not guaranteed to work entirely offline. SceneReader uses the recognized text to answer your question and does not create or retain audio-recording files in this beta.</p>
+      <p>Apple handles information processed by its services under its own terms and privacy practices. See <a href="https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/" rel="noopener">Apple’s speech-recognition privacy information</a>, including its section about apps using Speech Recognition.</p>
 
-      <h2>Information used by the app</h2>
-      <ul>
-        <li><strong>Camera:</strong> Camera frames are processed on the device for visual assistance. In the release build, OnSight Beacon does not save those frames to its document storage.</li>
-        <li><strong>Location:</strong> Precise location is used while the app is open to show the map, request a walking route, and calculate route guidance.</li>
-        <li><strong>Destination searches:</strong> Search text and selected place details are sent to Google Places to return matching destinations.</li>
-        <li><strong>Speech:</strong> Microphone audio is used when you choose Ask. Apple speech-recognition services may process the audio according to Apple's privacy terms. OnSight Beacon does not intentionally retain the recording.</li>
-        <li><strong>Saved destinations:</strong> A destination name and coordinates are stored in the app's local sandbox when you save a destination. You can remove saved destinations in the app.</li>
-      </ul>
+      <h2>Location, searches and Google services</h2>
+      <p>SceneReader requests access to your location while you use the app. Precise location helps show the map and provide walking-route guidance. Destination search text is sent to Google Places to find matching places. Route requests to Google include your current location and destination coordinates.</p>
+      <p>The app uses Google Maps, Places and Routes. Depending on the service and SDK configuration, Google’s processing includes precise or coarse location, search history, device identifiers, product interactions, crash and performance information, and other technical data used for service functionality and analytics. Google SDK disclosures identify device identifiers and certain other technical data as linked to the user. Not requiring a SceneReader account does not mean all service data is anonymous.</p>
+      <p>Google service processing and retention are governed by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://maps.google.com/help/terms_maps/" rel="noopener">Google Maps terms</a>. Our App Store privacy disclosures describe the data categories used by the app and its SDKs.</p>
 
-      <h2>Google Maps Platform</h2>
-      <p>OnSight Beacon uses Google Maps Platform, including Maps, Places, and Routes services. Requests may provide Google with location, destination-search information, device or app identifiers, product interaction, and diagnostic information needed to operate and improve those services. Google states that its iOS SDKs may collect precise and coarse location, search history, device identifiers, product interaction, crash data, performance data, and other technical data, depending on SDK use and configuration. This data is not used by OnSight Beacon for advertising or cross-app tracking.</p>
-      <p>Use of Google Maps features is subject to the <a href="https://maps.google.com/help/terms_maps/" rel="noopener">Google Maps/Google Earth Additional Terms</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+      <h2>Saved destinations and retention</h2>
+      <p>When you select a Google place as a destination, its name and coordinates are saved automatically in the app’s local storage. You can remove saved destinations in SceneReader. Deleting the app removes its local sandbox, but data in Apple device backups or separately exported copies may remain according to the settings and controls for those copies.</p>
+      <p>This beta does not keep app-created camera-photo or raw-audio recording files for later research use. Map and speech providers handle data under their own retention policies; SceneReader does not promise that information processed by those providers is immediately deleted or that we can delete information held independently by them.</p>
 
-      <h2>Optional cloud visual processing</h2>
-      <p>The initial beta's visual model runs on the device. A future version may offer clearly labeled optional cloud modes. If a user chooses such a mode, a compressed camera image and the related prompt may be sent through an OnSight-controlled HTTPS service to an AI provider solely to produce the requested response. OnSight does not intentionally retain those images or prompts after servicing the request. This policy and the App Store privacy disclosure will be updated before that capability is enabled for users.</p>
+      <h2>Research and future features</h2>
+      <p>The first pilot does not collect photos or recordings for our research or model-training program. Data processed by Google or Apple to provide existing features is separate from such a research program.</p>
+      <p>If a future version offers optional research-data sharing, we will first explain the data involved, purpose, storage access, retention, and withdrawal or deletion process, and obtain explicit opt-in consent before enabling that collection. Future cloud visual processing would also require a clear disclosure and a policy update before it is enabled. Neither feature is enabled in this beta.</p>
 
-      <h2>Retention and control</h2>
-      <p>OnSight Beacon retains saved destinations locally until you remove them or delete the app. Apple device backups may include app data according to the backup settings on your device. Map and speech service providers retain information according to their own policies. You may deny camera, location, microphone, or speech access in iOS Settings, although the related feature will not work.</p>
+      <h2>Your controls and security</h2>
+      <p>You can grant or revoke camera, location, microphone and speech-recognition permissions in iOS Settings. Denying a permission prevents or limits the related feature. You can remove saved destinations in the app and manage Apple backups separately.</p>
+      <p>SceneReader uses HTTPS for its Google web-service requests. We aim to minimize data use, but no security measure is perfect. Third-party service providers apply their own security and retention practices.</p>
 
-      <h2>Security</h2>
-      <p>Network requests use HTTPS. No security measure is perfect, but the app is designed to minimize data collection and keep visual inference on the device in the initial beta.</p>
-
-      <h2>Children</h2>
-      <p>OnSight Beacon is not directed to children and does not knowingly collect personal information from children. A parent or guardian may contact us with a privacy concern.</p>
-
-      <h2>Changes</h2>
-      <p>We may update this policy when the app's features or data practices change. The effective date above will identify the current version.</p>
-
-      <h2>Contact</h2>
+      <h2>Contact and support</h2>
       <p>For privacy questions or requests, email <a href="mailto:zhuangzhengyu20@gmail.com">zhuangzhengyu20@gmail.com</a>.</p>
-      <p><a href="../support/">OnSight Beacon Support</a> · <a href="../../">Developer website</a></p>
+      <p>If you choose to contact us, we receive your email address, message and any attachments you send, and use them to respond or troubleshoot your request. Please avoid sending unnecessary personal or sensitive information. Sending feedback does not by itself authorize using your photos or recordings for model-training research.</p>
+
+      <h2>Children and policy changes</h2>
+      <p>SceneReader is not directed to children. A parent or guardian may contact us with a privacy concern.</p>
+      <p>We will update this policy when the app’s features or data practices change. An effective date will identify each published version.</p>
+      <p><a href="https://zhuanz2002.github.io/onsight/support/" rel="noopener">SceneReader support</a></p>
     </article>
-    <footer>© 2026 OnSight Beacon</footer>
+    <footer>SceneReader · Privacy Policy</footer>
   </main>
 </body>
 </html>
